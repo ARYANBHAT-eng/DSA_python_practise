@@ -73,4 +73,18 @@ for _ in range (n):
     else:
         count2 +=1
 print("0" * count0 + "1" * count1 + "2" * count2)       
+
+
+"Write a program that takes a list of integers as input and counts the number of times a new maximum value is encountered as you iterate through the list from left to right."
+n  = int(input())
+count = 0
+max_so_far =-1
+
+for i in range (n):
+    x = int(input())
+    if x > max_so_far :
+        count += 1
+        max_so_far = x
+        
+print(count)   
     
