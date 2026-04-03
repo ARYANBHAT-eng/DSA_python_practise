@@ -87,4 +87,11 @@ for i in range (n):
         max_so_far = x
         
 print(count)   
+
+"Write a program that takes a string of digits as input and calculates the product of all the digits in the string."
     
+n = input()
+p = 1
+for i in n:
+    p *= int(i)
+print(p)       
