@@ -95,3 +95,40 @@ p = 1
 for i in n:
     p *= int(i)
 print(p)       
+
+"Write a program that takes a string as input and prints the characters at even indices followed by the characters at odd indices."
+Arr12 = "WORKATTECH"
+for i in range(0, len(Arr12), 2):
+	print(Arr12[i]+Arr12[i + 1])
+
+"A car travels a distance of 400 kilometers. The user is asked to input the speed of the car in kilometers per hour. The program calculates and prints the time it takes for the car to travel the distance."
+
+distance =int(400)
+Speed = int(input())
+time = distance // Speed
+print(time)
+
+
+
+"pallindrome: Write a program that takes a string as input and checks if it is a palindrome (i.e., reads the same backward as forward). The program should print True if the string is a palindrome and False otherwise."
+
+T = int(input())
+
+for _ in range(T):
+    word = input()
+    
+    i = 0
+    j = len(word) - 1
+    is_palindrome = True
+    
+    while i < j:
+        if word[i] != word[j]:
+            is_palindrome = False
+            break
+        i += 1
+        j -= 1
+    
+    if is_palindrome:
+        print("True")
+    else:
+        print("False")
