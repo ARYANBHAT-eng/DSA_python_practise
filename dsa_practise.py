@@ -110,8 +110,7 @@ print(time)
 
 
 
-"pallindrome: Write a program that takes a string as input and checks if it is a palindrome (i.e., reads the same backward as forward). The program should print True if the string is a palindrome and False otherwise."
-
+"pallindrom program: Write a program that takes a string as input and checks if it is a palindrome (a word that reads the same backward as forward). The program should print True if the string is a palindrome and False otherwise."
 T = int(input())
 
 for _ in range(T):
@@ -132,3 +131,16 @@ for _ in range(T):
         print("True")
     else:
         print("False")
+
+
+"Write a program that takes a string of digits as input and checks if it contains the substring "00". The program should print "Yes" if the substring is found and "No" otherwise."
+t = int(input())
+for _ in range(t):
+    n = input()
+    print("Yes" if "00" in n else "No")
+
+"Write a program that takes a string of digits as input and calculates the sum of all the digits in the string."
+t = int(input())
+for _ in range(t):
+    n = input()
+    print(sum(int(d) for d in n))
