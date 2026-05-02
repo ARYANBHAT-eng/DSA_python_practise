@@ -144,3 +144,19 @@ t = int(input())
 for _ in range(t):
     n = input()
     print(sum(int(d) for d in n))
+
+"Write a program that takes a string of digits as input and calculates the average of all the digits in the string. The program should print the average as a floating-point number with two decimal places."
+t = int(input())
+for _ in range(t):
+    n = input()
+    print(sum(int(d)**2 for d in n))
+
+"armstrong number: Write a program that takes a string of digits as input and checks if it is an Armstrong number (a number that is equal to the sum of its own digits each raised to the power of the number of digits). The program should print "Yes" if the number is an Armstrong number and "No" otherwise."
+T = int(input())
+for _ in range(T):
+    n = input()
+    i = sum(int(d)**3 for d in n)
+    if i == int(n):
+        print("Yes")
+    else:
+        print("No")
